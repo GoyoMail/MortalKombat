@@ -25,6 +25,8 @@ const gamer2 = {
     progress: 'right'
 };
 
+const $arenas = document.querySelector('.arenas')
+
 function createPlayer(player, gamers) {
     const $gamers = document.createElement('div');
     const $progressbar = document.createElement('div');
@@ -55,7 +57,6 @@ function createPlayer(player, gamers) {
     $img.style.transform = 'scale(' + gamers.orient + ', 1)';
 
     //const $arenas = document.getElementById('Arenas');
-    const $arenas = document.querySelector('.arenas')
     $arenas.appendChild($gamers);
 }
 
